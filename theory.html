@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory | ScaleCalculator.tk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="top">
+        <div class="nav-title">
+            <h1>The Scale Calculator</h1>
+            <div class="burger" onclick="toggleResponsive()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav>
+            <div onclick="location.href='/index.html'">Home</div>
+            <div onclick="location.href='/about.html'">About</div>
+            <div onclick="location.href='/theory.html'" class="current-page">Theory</div>
+        </nav>
+    </div>
+    <main class="about">
+        <div>
+            <h2>Theory</h2>
+            <p>There are many different types of scales, but Major and Minor are the most common.</p>
+            <p>Here are the notes on a piano:</p>
+            <div class="center-img">
+                <img src="./images/piano.png" class="demo-img">
+                <div class="center-caption">* Note that each sharp has a corresponding flat (and vice versa)</div>
+            </div>
+            <p>
+                When working out the notes to play in a scale,
+                the first note will be in the name of the scale - 
+                (so a Bb Major has a Bb)
+            </p>
+            <p>
+                Then we follow the interval formula to work out the next notes:
+            </p>
+            <ul>
+                <li>
+                    <b>The Major scale formula is: </b>
+                    <div class="scale-formula">W - W - H - W - W - W - H</div>
+                </li>
+                <li>
+                    <b>The Minor scale formula is: </b>
+                    <div class="scale-formula">W - H - W - W - H - W - W</div>
+                </li>
+            </ul>
+            <p>
+                Where 'W' / a whole tone is 2 semitones and 'H' / a half tone is 1 semitone
+            </p>
+            <p>So, for example, to find the notes of a Bb Major Scale, we use the Major formula:</p>
+            <ul>
+                <li>
+                    A <b>whole tone</b> from Bb is <b>C</b>
+                </li>
+                <li>
+                    A <b>whole tone</b> from C is <b>D</b>
+                </li>
+                <li>
+                    A <b>half tone</b> from D is <b>Eb</b>
+                </li>
+                <li>
+                    A <b>whole tone</b> from Eb is <b>F</b>
+                </li>
+                <li>
+                    A <b>whole tone</b> from F is <b>G</b>
+                </li>
+                <li>
+                    A <b>whole tone</b> from G is <b>A</b>
+                </li>
+                <li>
+                    A <b>half tone</b> from A is <b>Bb</b> (back to where we started)
+                </li>
+            </ul>
+            <p>
+                Which means that the whole scale is: 
+                <b>Bb C Eb F G A Bb</b>
+            </p>
+            <p>
+                It is also important to know that there can only be 
+                one note for each natural / white key on the piano, 
+                this means that for the (theoretical) scale of <b>B# Major</b>,
+                the notes are not: <b>B# D E F G A B B#</b>, however instead:
+                <b>B# C## D## E# F## G## A## B#</b>.
+            </p>
+            <p>
+                (You could think of this as
+                meaning that each note is one letter further in the alphabet
+                from the previous, so for B# Maj the 'letters' are: B, C, D, E, F, G, A, B)
+            </p>
+            <div class="final-link" onclick="location.href='/index.html'">
+                <div>
+                    Back to the calculator
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="max"></div>
+    <div class="last">
+        <div>
+            © 2021 ScaleCalculator.tk
+        </div>
+        <div>
+            Developed by Oscar S, at <a class="nw-link" href="https://nevwin.tk">Nevwin</a>
+        </div>
+    </div>
+    <script src="./responsive-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ScaleCalculator.tk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="top">
+        <div class="nav-title">
+            <h1>The Scale Calculator</h1>
+            <div class="burger" onclick="toggleResponsive()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav>
+            <div onclick="location.href='/index.html'" class="current-page">Home</div>
+            <div onclick="location.href='/about.html'">About</div>
+            <div onclick="location.href='/theory.html'">Theory</div>
+        </nav>
+    </div>
+    <main>
+        <div>
+            <h2>Enter a note and choose a key...</h2>
+            <p>For example, B then Flat (&#9837;), then Major</p>
+            <div class="selection-container">
+                <div class="selection" id="selection-note">
+                    <div class="option-selected">C</div>
+                    <div>D</div>
+                    <div>E</div>
+                    <div>F</div>
+                    <div>G</div>
+                    <div>A</div>
+                    <div>B</div>
+                </div>
+                <div class="selection" id="selection-accidental">
+                    <div class="option-selected">&#9838;</div>
+                    <div>&#9839;</div>
+                    <div>&#9837;</div>
+                </div>
+                <div class="selection" id="selection-key">
+                    <div class="option-selected">Major</div>
+                    <div>Minor</div>
+                </div>
+            </div>
+            <hr class="responsive-hr">
+            <p class="output-text">
+                <span class="underline">C Major</span>
+                 scale has the notes:
+            </p>
+            <div class="output-notes">
+                <div>
+                    <div>C</div>
+                </div>
+                <div>
+                    <div>D</div>
+                </div>
+                <div>
+                    <div>E</div>
+                </div>
+                <div>
+                    <div>F</div>
+                </div>
+                <div>
+                    <div>G</div>
+                </div>
+                <div>
+                    <div>A</div>
+                </div>
+                <div>
+                    <div>B</div>
+                </div>
+                <div>
+                    <div>C</div>
+                </div>
+            </div>
+            <div class="final-link">
+                <div onclick="location.href='/theory.html'">
+                    Learn how to work the notes out...
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="max"></div>
+    <div class="last">
+        <div>
+            © 2021 ScaleCalculator.tk
+        </div>
+        <div>
+            Developed by Oscar S, at <a class="nw-link" href="https://nevwin.tk">Nevwin</a>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./responsive-nav.js"></script>
+</body>
+</html>
